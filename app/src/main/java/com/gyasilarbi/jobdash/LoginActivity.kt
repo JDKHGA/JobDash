@@ -16,5 +16,11 @@ class LoginActivity : AppCompatActivity() {
             val intent = Intent (this, RegisterActivity::class.java)
             startActivity(intent)
         }
+
+        val loginButton = findViewById<TextView>(R.id.loginButton)
+        loginButton.setOnClickListener {
+            val go = Intent (this, HomeActivity::class.java)
+            startActivity(go)
+        }
     }
 }

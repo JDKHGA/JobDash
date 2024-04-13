@@ -19,22 +19,22 @@ class RegisterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
 
-        val items = listOf("Accra", "Kumasi", "Cape Coast", "Takoradi", "Koforidua", "Ho", "Tamale ")
-
-        val autoComplete: AutoCompleteTextView = findViewById(R.id.autoComplete)
-
-        val adapter = ArrayAdapter(this,R.layout.list_item,items)
-
-        autoComplete.setAdapter(adapter)
-
-        autoComplete.onItemClickListener = AdapterView.OnItemClickListener {
-                adapterView, view, i, l ->
-
-            val itemSelected = adapterView.getItemAtPosition(i)
-
-            Toast.makeText(this, "Item: $itemSelected", Toast.LENGTH_SHORT).show()
-
-        }
+//        val items = listOf("Accra", "Kumasi", "Cape Coast", "Takoradi", "Koforidua", "Ho", "Tamale ")
+//
+//        val autoComplete: AutoCompleteTextView = findViewById(R.id.autoComplete)
+//
+//        val adapter = ArrayAdapter(this,R.layout.list_item,items)
+//
+//        autoComplete.setAdapter(adapter)
+//
+//        autoComplete.onItemClickListener = AdapterView.OnItemClickListener {
+//                adapterView, view, i, l ->
+//
+//            val itemSelected = adapterView.getItemAtPosition(i)
+//
+//            Toast.makeText(this, "Item: $itemSelected", Toast.LENGTH_SHORT).show()
+//
+//        }
 
         // Initializing variables
         selectedDateEditText = findViewById(R.id.idTVSelectedDate)
