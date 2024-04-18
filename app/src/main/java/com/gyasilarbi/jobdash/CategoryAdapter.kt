@@ -28,6 +28,8 @@ class CategoryAdapter(
         fun bindData(category: Category) {
             binding.categoryName.text = category.name
             binding.categoryLogo.setImageResource(category.logoResourceId)
+            binding.categoryDescription.text = category.description
+            binding.categoryPrice.text = category.price
 
             binding.root.setOnClickListener {
                 onItemClicked(category)
